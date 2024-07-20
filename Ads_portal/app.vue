@@ -1,6 +1,9 @@
 <template>
-  <h1 class="text-3xl font-bold underline bg-red-500">
-    Hello world!
-  </h1>
-  <NuxtPage />
+  <NuxtLayout v-if="$route.path !='/login'">
+      
+  </NuxtLayout>
+  <NuxtPage v-else></NuxtPage>
 </template>
+
+
+
