@@ -1,7 +1,4 @@
 
-import { NuxtPage } from '#build/components';
-
-import { NuxtPage } from '#build/components';
 <template>
   <div class="app-bar flex flex-row relative">
     <div class="sidebar">
@@ -42,7 +39,7 @@ import { NuxtPage } from '#build/components';
     </div>
     <div>
       <div class="nav-bar">
-        <div class="left">
+        <div class="left text-white">
           <h1>ADS portal</h1>
         </div>
           <h1>Image</h1>

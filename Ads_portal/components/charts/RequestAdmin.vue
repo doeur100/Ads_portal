@@ -2,13 +2,13 @@
     <div class="chart">
       <div class="header  flex flex-row items-center justify-between">
         <div class="title">
-          <span>Daily Active User (DAU)</span>
+          <span>Track ad request</span>
         </div>
         <div class="input-date">
           <span>Total: {{ userTotal }}</span>
         </div>
       </div>
-      <canvas id="AdminDAU" class="h-full"></canvas>
+      <canvas id="TrackRequestAdmin" class="h-full"></canvas>
     </div>
   </template>
   
@@ -17,7 +17,7 @@
   import { onMounted, ref } from "vue";
 //   import { format } from "date-fns";
   const userTotal = ref();
-  const counts: number[] = [11,26,3,43];
+  const counts: number[] = [100,26,40,43];
   const times: string[] = ["23","343","32","43"];
   
   const data = {
@@ -46,7 +46,7 @@
   onMounted(async () => {
     // await getDAU();
     const canvasElement = document.getElementById(
-      "AdminDAU"
+      "TrackRequestAdmin"
     ) as HTMLCanvasElement | null;
     if (canvasElement) {
       new Chart(canvasElement, config);
@@ -66,7 +66,7 @@
 //   };
   </script>
   <style scoped>
-   span {
+  span {
     color:#F4CE14;
   }
   .chart {

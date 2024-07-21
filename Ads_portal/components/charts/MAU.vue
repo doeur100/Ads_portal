@@ -2,13 +2,13 @@
     <div class="chart">
       <div class="header  flex flex-row items-center justify-between">
         <div class="title">
-          <span>Daily Active User (DAU)</span>
+          <span>Daily Active User (MAU)</span>
         </div>
         <div class="input-date">
           <span>Total: {{ userTotal }}</span>
         </div>
       </div>
-      <canvas id="AdminDAU" class="h-full"></canvas>
+      <canvas id="MAU" class="h-full"></canvas>
     </div>
   </template>
   
@@ -46,7 +46,7 @@
   onMounted(async () => {
     // await getDAU();
     const canvasElement = document.getElementById(
-      "AdminDAU"
+      "MAU"
     ) as HTMLCanvasElement | null;
     if (canvasElement) {
       new Chart(canvasElement, config);
