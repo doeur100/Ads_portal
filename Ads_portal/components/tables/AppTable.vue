@@ -1,11 +1,5 @@
 <template>
-    <div class="mt-2">
-        <div class="flex justify-between">
-            <span class="material-symbols-outlined text-white">west</span>
-            <button class="bg-[#2A2D3E] flex items-center p-2 rounded-[10px] w-[10rem] justify-center text-white"><span class="material-symbols-outlined  ">add</span>Create App</button>
-        </div>
-        <!-- <AppTable class="mt-10"/> -->
-        <div class="bg-[#2A2D3E] main-table pb-10 mt-10">
+    <div class="bg-[#2A2D3E] main-table pb-10">
         <h1 class="text-[#F4CE14] p-5 ml-4">Apps</h1>
         <table>
           <tr>
@@ -26,9 +20,11 @@
              <td>100</td>
              <td>100</td>
              <td>
-                <span class="bg-[#5F6368] rounded-[20px] pl-10 pr-10 pt-2 pb-2">
-                Archieved
-                </span>
+                <div class="">
+                    <span class="bg-[#5F6368] rounded-[10px] p-3  ">
+                        Archived
+                    </span>
+                </div>
              </td>
              <td>
                 <div class="flex flex-row justify-evenly">
@@ -45,9 +41,11 @@
              <td>100</td>
              <td>100</td>
              <td>
-                <span class="bg-[#5F6368] rounded-[20px] pl-10 pr-10 pt-2 pb-2">
-                Archieved
-                </span>
+                <div class="">
+                    <span class="bg-[#5F6368] rounded-[10px] p-3  ">
+                        Archived
+                    </span>
+                </div>
              </td>
              <td>
                 <div class="flex flex-row justify-evenly">
@@ -64,9 +62,11 @@
              <td>100</td>
              <td>100</td>
              <td>
-                <span class="bg-[#5F6368] rounded-[20px] pl-10 pr-10 pt-2 pb-2">
-                Archieved
-                </span>
+                <div class="">
+                    <span class="bg-[#5F6368] rounded-[10px] p-3  ">
+                        Archived
+                    </span>
+                </div>
              </td>
              <td>
                 <div class="flex flex-row justify-evenly">
@@ -78,14 +78,10 @@
           
       </table>
     </div>
-    </div>
-</template>
-<script setup lang="ts">
-    // import AppTable from '~/components/tables/AppTable.vue';
-</script>
-<style>
-
-.main-table{
+ </template>
+ 
+ <style scoped>
+ .main-table{
      border-radius:10px;
   }
  table {
@@ -105,4 +101,4 @@
      color:white;
      height:70px;
  }
-</style>
+ </style>

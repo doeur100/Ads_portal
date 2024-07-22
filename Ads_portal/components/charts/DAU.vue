@@ -25,11 +25,13 @@
     datasets: [
       {
         label: "Active users",
-        backgroundColor: "blue",
+        backgroundColor: "white",
         data: counts,
         tension: 0.3,
-        borderColor: 'rgb(75, 192, 192)',
-        pointBorderWidth: 1,
+        borderColor: 'teal',
+        pointBorderWidth: 2,
+        pointBackgroundColor:'teal',
+        pointBorderColor:'white'
       },
     ],
   };
@@ -70,9 +72,8 @@
     color:#F4CE14;
   }
   .chart {
-    
     background: #2A2D3E;
-    border-radius: var(--radius);
+    border-radius:10px;
     @apply  shadow-sm p-3 sm:p-5;
   }
   
